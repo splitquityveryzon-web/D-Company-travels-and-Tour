@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="D Company Travels and Tour - Your global mobility partner for Visa, Passports, Study Abroad, and Professional CV Revamp.">
+    <title>D Company Travels and Tour | Your Global Mobility Partner</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #0A2540;
+            --accent-gold: #F39C12;
+            --accent-gold-hover: #D68910;
+            --text-dark: #333333;
+            --text-light: #FFFFFF;
+            --bg-light: #F4F7F6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); line-height: 1.6; background-color: var(--bg-light); scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+        /* Navigation */
+        header { background-color: var(--primary-blue); color: var(--text-light); padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo h2 { color: var(--accent-gold); font-size: 22px; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-links { list-style: none; display: flex; gap: 20px; align-items: center; }
+        
+        /* Contact Strip */
+        .contact-strip { background: #e9ecef; padding: 10px 0; border-bottom: 1px solid #ddd; font-size: 13px; }
+        .contact-info { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; font-weight: 600; color: var(--primary-blue); }
+        .contact-info a:hover { color: var(--accent-gold); }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.85)), url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: var(--text-light); padding: 100px 0; text-align: center; 
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; padding: 0 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 800px; margin-inline: auto; padding: 0 15px; }
+
+        /* Buttons */
+        .btn { padding: 12px 28px; border-radius: 5px; font-weight: 600; display: inline-block; cursor: pointer; border: none; }
+        .btn-gold { background: var(--accent-gold); color: white; }
+        .btn-gold:hover { background: var(--accent-gold-hover); transform: translateY(-2px); }
+        .btn-outline { border: 2px solid white; color: white; margin-top: 10px; }
+        .btn-outline:hover { background: white; color: var(--primary-blue); }
+
+        /* Services Grid */
+        .services { padding: 80px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2.2rem; color: var(--primary-blue); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 40px; border-radius: 10px; text-align: center; border-bottom: 5px solid transparent; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { border-bottom: 5px solid var(--accent-gold); transform: translateY(-5px); }
+        .card i { font-size: 40px; color: var(--primary-blue); margin-bottom: 20px; }
+
+        /* CTA Section */
+        .cta-box { background: var(--primary-blue); color: white; padding: 60px 20px; text-align: center; border-radius: 15px; margin: 40px 0; }
+
+        /* Footer */
+        footer { background: #051626; color: #adb5bd; padding: 60px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-col h4 { color: white; margin-bottom: 20px; }
+        .footer-col p, .footer-col li { margin-bottom: 10px; font-size: 14px; }
+        
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 1000; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+            .contact-info { flex-direction: column; gap: 8px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2348166609459" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Top Contact Strip -->
+    <div class="contact-strip">
+        <div class="container contact-info">
+            <span><i class="fas fa-phone"></i> <a href="tel:+2348166609459">+234 816 660 9459</a></span>
+            <span><i class="fas fa-phone"></i> <a href="tel:+2347033383459">+234 703 338 3459</a></span>
+            <span><i class="fas fa-envelope"></i> <a href="mailto:Splitquityveryzon@gmail.com">Splitquityveryzon@gmail.com</a></span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo"><h2>D Company</h2></div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://wa.me/2348166609459" class="btn btn-gold" style="padding: 8px 18px;">Chat Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>From Passport to Global Opportunities — We Handle It All</h1>
+            <p>Your all-in-one global mobility partner. From secure visa assistance and passport processing to professional CV optimization for international roles.</p>
+            <a href="https://wa.me/2348166609459" class="btn btn-gold">Book Free Consultation</a>
+            <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Reliable Solutions for Your Journey</h2>
+            <div class="services-grid">
+                
+                <div class="card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Passport Assistance</h3>
+                    <p>Hassle-free processing for new international passports and timely renewals.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-stamp"></i>
+                    <h3>Visa Assistance</h3>
+                    <p>Expert guidance for Study, Work, and Tourist visas (UK, US, Canada, Schengen, and more).</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>CV Revamp</h3>
+                    <p>ATS-optimized resumes designed to meet international standards and land you global interviews.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Study Abroad</h3>
+                    <p>End-to-end admission support and relocation guidance for students worldwide.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-plane-departure"></i>
+                    <h3>Flight & Tours</h3>
+                    <p>Budget-friendly flight bookings and curated international tour packages.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hotel Reservations</h3>
+                    <p>Secure and verified accommodations tailored to your travel needs and budget.</p>
+                </div>
+
+            </div>
+
+            <!-- CTA Box -->
+            <div class="cta-box">
+                <h2>Ready to Start Your Application?</h2>
+                <p style="margin: 15px 0 25px;">Contact our experts today for a personalized assessment.</p>
+                <a href="https://wa.me/2348166609459" class="btn btn-gold">Get Started via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>D Company Travels</h4>
+                    <p>Your bridge to international success. We provide professional, results-driven guidance for global mobility.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> +234 816 660 9459</p>
+                    <p><i class="fas fa-phone"></i> +234 703 338 3459</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:Splitquityveryzon@gmail.com" style="color: #adb5bd;">Splitquityveryzon@gmail.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Head Office</h4>
+                    <p>Port Harcourt, Rivers State,<br>Nigeria.</p>
+                    <p>Open: Mon - Fri (9am - 5pm)</p>
+                </div>
+            </div>
+            <div style="text-align:center; padding-top:20px; border-top:1px solid #1a2a3a; font-size: 12px; color: #6c757d;">
+                &copy; 2026 D Company Travels and Tour. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
